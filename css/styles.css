@@ -4,7 +4,9 @@
 }
 
 * {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
   color: rgba(95, 93, 93, 0.849);
 }
 
@@ -13,6 +15,10 @@ body {
           box-sizing: border-box;
   padding-top: 50px;
   background-color: #c3cfe2;
+}
+
+ul {
+  list-style: none;
 }
 
 main {
@@ -24,28 +30,18 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-size: 18px;
-  padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 50px 90px 50px;
   width: 386px;
+  margin-bottom: -25px;
   margin-left: 20%;
   margin-right: 20%;
   -webkit-box-shadow: 0px 1px 6px rgba(95, 93, 93, 0.849);
           box-shadow: 0px 1px 6px rgba(95, 93, 93, 0.849);
   background-color: #fff;
-}
-
-figure {
-  padding: 0px 50px 0px 50px;
-  width: 386px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-figure img {
-  border-radius: 50%;
 }
 
 Footer {
@@ -56,22 +52,53 @@ Footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   font-size: 18px;
   padding: 50px;
   width: 386px;
+  margin-top: -10px;
   margin-left: 20%;
   margin-right: 20%;
   color: #fff;
   background-color: #686de0;
 }
 
+figure {
+  padding: 0px 50px 0px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+  margin-top: -100px;
+  margin-left: 40px;
+  border: 6px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .name {
   color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .address {
-  color: #fff;
+  color: #c3cfe2;
 }

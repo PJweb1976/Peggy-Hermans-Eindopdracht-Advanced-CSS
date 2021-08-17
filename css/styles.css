@@ -9,12 +9,16 @@
 }
 
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 50px;
   background-color: #c3cfe2;
 }
 
 main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-top: 20em;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   display: -webkit-box;
@@ -34,10 +38,14 @@ main {
 }
 
 figure {
-  padding: 0px 0px 0 50px;
+  padding: 0px 50px 0px 50px;
   width: 386px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+figure img {
+  border-radius: 50%;
 }
 
 Footer {
@@ -60,6 +68,10 @@ Footer {
   background-color: #686de0;
 }
 
-p .name {
+.name {
+  color: #fff;
+}
+
+.address {
   color: #fff;
 }

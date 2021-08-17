@@ -9,11 +9,14 @@
 }
 
 body {
+  box-sizing: border-box;
+  padding-top: 50px;
   background-color: #c3cfe2;
 }
 
 main {
   box-sizing: border-box;
+  border-top: 20em;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   display: flex;
@@ -27,10 +30,13 @@ main {
   background-color: $color-white;
 }
 figure {
-  padding: 0px 0px 0 50px;
+  padding: 0px 50px 0px 50px;
   width: 386px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  img {
+    border-radius: 50%;
+  }
 }
 
 Footer {
@@ -47,6 +53,9 @@ Footer {
   color: $color-white;
   background-color: #686de0;
 }
-p .name {
+.name {
+  color: $color-white;
+}
+.address {
   color: $color-white;
 }

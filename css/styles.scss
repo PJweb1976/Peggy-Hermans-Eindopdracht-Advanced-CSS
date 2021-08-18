@@ -18,7 +18,9 @@ body {
 ul {
   list-style: none;
 }
+
 main {
+  @include box-shadow;
   box-sizing: border-box;
   border-top: 20em;
   border-top-left-radius: 40px;
@@ -30,10 +32,10 @@ main {
   margin-bottom: -25px;
   margin-left: 20%;
   margin-right: 20%;
-  box-shadow: 0px 1px 6px $color-darkgrey;
   background-color: $color-white;
 }
 footer {
+  @include box-shadow;
   box-sizing: border-box;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;

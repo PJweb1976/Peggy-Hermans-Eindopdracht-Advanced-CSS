@@ -3,6 +3,7 @@
   margin: 0;
 }
 @import "./variable";
+@import "./mediaqueries";
 
 * {
   font-family: "Roboto", sans-serif;
@@ -19,8 +20,8 @@ ul {
   list-style: none;
 }
 
-  .top {
-    @include box-shadow;
+.top {
+  @include box-shadow;
   box-sizing: border-box;
   border-top: 20em;
   border-top-left-radius: 40px;
@@ -50,26 +51,25 @@ ul {
   margin-right: 20%;
   background-color: $color-purpleblue;
 }
-  figure {
+figure {
   padding: 0px 50px 0px 50px;
   width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  }
-  img {
+}
+img {
   border-radius: 50%;
   margin-top: -100px;
   margin-left: 40px;
   border: 6px solid $color-white;
   object-fit: cover;
-  }
-  .name {
+}
+.name {
   color: $color-white;
   margin-top: 10px;
   margin-bottom: 10px;
-  }
-  .address {
+}
+.address {
   color: $color-grey;
-} 
- 
+}

@@ -1,0 +1,65 @@
+.list--photos {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-gap: 1em;
+
+  > * {
+    flex: 1 1 15rem;
+
+    &:hover,
+    &:focus {
+      figcaption {
+        opacity: 1;
+      }
+    }
+
+    &:last-child {
+      flex-grow: 0;
+    }
+  }
+
+  .card__figure {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  img {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    background-color: $color-blue;
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  a {
+    padding: 0.25em 0.5em;
+    text-align: center;
+    background-color: $color-white;
+    border-radius: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out, transform 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      transform: translateY(2px);
+    }
+  }
+}

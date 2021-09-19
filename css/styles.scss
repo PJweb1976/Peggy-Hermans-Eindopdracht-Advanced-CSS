@@ -1,75 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-@import "./variable";
-@import "./mediaqueries";
+// Variables
+@import "./variables";
 
-* {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.8;
-  color: $color-darkgrey;
-}
-body {
-  box-sizing: border-box;
-  padding-top: 50px;
-  background-color: $color-grey;
-}
-ul {
-  list-style: none;
-}
+// Mixins
+@import "./mixins";
 
-.top {
-  @include box-shadow;
-  box-sizing: border-box;
-  border-top: 20em;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 50px 90px 50px;
-  width: 386px;
-  margin-bottom: -25px;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: $color-white;
-}
-.bottom {
-  @include box-shadow;
-  box-sizing: border-box;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 18px;
-  padding: 50px;
-  width: 386px;
-  margin-top: -10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: $color-purpleblue;
-}
-figure {
-  padding: 0px 50px 0px 50px;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-img {
-  border-radius: 50%;
-  margin-top: -100px;
-  margin-left: 40px;
-  border: 6px solid $color-white;
-  object-fit: cover;
-}
-.name {
-  color: $color-white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.address {
-  color: $color-grey;
-}
+// Modules
+@import "./base";
+@import "./list";

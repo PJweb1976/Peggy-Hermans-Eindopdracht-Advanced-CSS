@@ -5,6 +5,8 @@
 
 :root {
   font-size: calc(1em + 0.16vw);
+  display: -ms-grid;
+  display: grid;
 }
 
 body {
@@ -180,60 +182,152 @@ body {
           transform: translateY(2px);
 }
 
-.social--media-buttons {
+.social--media-buttons .button {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-  position: fixed;
-  right: 5px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  right: 0px;
   top: 50%;
-  width: 13em;
   margin-top: -2.5em;
+  margin-bottom: 1px;
   /*::before ook nog
             normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
             &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
 }
 
-.social--media-blog {
+.social--media-buttons .button:hover {
+  width: 200px;
+}
+
+.social--media-buttons .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.social--media-buttons .button:nth-child(1):hover .icon {
   background-color: #e17b77;
   color: #fff;
+}
+
+.social--media-buttons .button:nth-child(2):hover .icon {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(3):hover .icon {
+  background-color: #007bb6;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(4):hover .icon {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(5):hover .icon {
+  background-color: #333;
+  color: #fff;
+}
+
+.social--media-buttons .button .icon i {
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  line-height: 60px;
+}
+
+.social--media-buttons .button:hover .icon i {
+  color: #fff;
+}
+
+.social--media-buttons .button span {
+  font-size: 20px;
+  font-weight: 50px;
+  line-height: 60px;
+  margin-left: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.social--media-buttons .button:nth-child(1):hover {
+  background-color: #e17b77;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(2):hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(3):hover {
+  background-color: #007bb6;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(4):hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.social--media-buttons .button:nth-child(5):hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/*
+.social--media-blog {
+  background-color: $color-pink;
+  color: $color-white;
   font-size: 12px;
   padding: 5px;
   padding-right: 41px;
 }
 
 .social--media-linkedin {
-  background-color: #007bb6;
-  color: #fff;
+  background-color: $color-darkblue;
+  color: $color-white;
   font-size: 12px;
   padding: 5px;
   padding-right: 35px;
 }
 
 .social--media-twitter {
-  background-color: #00aced;
-  color: #fff;
+  background-color: $color-lightblue;
+  color: $color-white;
   font-size: 12px;
   padding: 5px;
   padding-right: 33px;
 }
 
 .social--media-facebook {
-  background-color: #3b5998;
-  color: #fff;
+  background-color: $color-mediumblue;
+  color: $color-white;
   font-size: 12px;
   padding: 5px;
   padding-right: 20px;
 }
 
 .social--media-github {
-  background-color: #333;
-  color: #fff;
+  background-color: $color-black;
+  color: $color-white;
   font-size: 12px;
   padding: 5px;
   padding-right: 22px;
-}
-
+}*/
 .list {
   padding-left: 0;
   list-style: none;

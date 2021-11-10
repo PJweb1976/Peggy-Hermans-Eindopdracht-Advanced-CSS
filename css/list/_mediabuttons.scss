@@ -1,16 +1,91 @@
-.social--media-buttons {
+.social--media-buttons .button {
   @include list-reset;
-  position: fixed;
-  right: 5px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  right: 0px;
   top: 50%;
-  width: 13em;
   margin-top: -2.5em;
+  margin-bottom: 1px;
 
   /*::before ook nog
             normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
             &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
 }
 
+.social--media-buttons .button:hover {
+  width: 200px;
+}
+.social--media-buttons .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+.social--media-buttons .button:nth-child(1):hover .icon {
+  background-color: $color-pink;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(2):hover .icon {
+  background-color: $color-lightblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(3):hover .icon {
+  background-color: $color-darkblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(4):hover .icon {
+  background-color: $color-mediumblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(5):hover .icon {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.social--media-buttons .button .icon i {
+  font-size: 25px;
+  transition: all 0.3s ease-out;
+  line-height: 60px;
+}
+.social--media-buttons .button:hover .icon i {
+  color: #fff;
+}
+.social--media-buttons .button span {
+  font-size: 20px;
+  font-weight: 50px;
+  line-height: 60px;
+  margin-left: 30px;
+  transition: all 0.3s ease-out;
+}
+.social--media-buttons .button:nth-child(1):hover {
+  background-color: $color-pink;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(2):hover {
+  background-color: $color-lightblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(3):hover {
+  background-color: $color-darkblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(4):hover {
+  background-color: $color-mediumblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(5):hover {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+/*
 .social--media-blog {
   background-color: $color-pink;
   color: $color-white;
@@ -49,4 +124,4 @@
   font-size: 12px;
   padding: 5px;
   padding-right: 22px;
-}
+}*/

@@ -180,6 +180,60 @@ body {
           transform: translateY(2px);
 }
 
+.social--media-buttons {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  width: 13em;
+  margin-top: -2.5em;
+  /*::before ook nog
+            normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
+            &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
+}
+
+.social--media-blog {
+  background-color: #e17b77;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 41px;
+}
+
+.social--media-linkedin {
+  background-color: #007bb6;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 35px;
+}
+
+.social--media-twitter {
+  background-color: #00aced;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 33px;
+}
+
+.social--media-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+.social--media-github {
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 22px;
+}
+
 .list {
   padding-left: 0;
   list-style: none;

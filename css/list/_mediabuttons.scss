@@ -1,0 +1,52 @@
+.social--media-buttons {
+  @include list-reset;
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  width: 13em;
+  margin-top: -2.5em;
+
+  /*::before ook nog
+            normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
+            &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
+}
+
+.social--media-blog {
+  background-color: $color-pink;
+  color: $color-white;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 41px;
+}
+
+.social--media-linkedin {
+  background-color: $color-darkblue;
+  color: $color-white;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 35px;
+}
+
+.social--media-twitter {
+  background-color: $color-lightblue;
+  color: $color-white;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 33px;
+}
+
+.social--media-facebook {
+  background-color: $color-mediumblue;
+  color: $color-white;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+.social--media-github {
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 12px;
+  padding: 5px;
+  padding-right: 22px;
+}

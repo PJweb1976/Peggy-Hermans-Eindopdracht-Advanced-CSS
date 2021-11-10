@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title> Eindopdracht: Advances CSS </title>
         <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+        <script src="https://kit.fontawesome.com/7be01a5540.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -97,11 +98,9 @@
             <container class="container" hidden>
                 <section class="foto--grid fotos--grid">
                     <img class="portfolio--grid" width="200px" height="200px" src="/img/IMG_1698.jpeg" alt=""/>
-                    <button type="knopje"> READ MORE </button>
                 </section>
                 <section class="foto--grid fotos-grid">
-                    <img class="portfolio--grid" width="200px" height="200px" src="/img/IMG_1698.jpeg" alt=""/>
-                    <btn type="knopje"> READ MORE </btn>
+                    <img class="portfolio--grid" width="200px" height="200px" src="/img/IMG_1698.jpeg" alt=""/>           
                 </section>
                 <section class="foto--grid fotos-grid">
                     <img class="portfolio--grid" width="200px" height="200px" src="/img/IMG_1698.jpeg" alt=""/>
@@ -122,18 +121,51 @@
         </main>
 
         <section> absoluut op scherm
-            <ul>
-                mixin listreset
+            <ul class="social--media-buttons">
                 <li>
-                    <a href="" class="social-media blog">
-                        <span class="fa-laptop-code"></span>
-                        Checkout my blog
+                    <a href="" class="social--media-blog">
+                        <i class="fas fa-laptop-code"></i>
+                        Check out my blog
+                    </a> 
+                </li>
+                <li>
+                    <a href="" class="social--media-twitter">
+                        <i class="fab fa-twitter"></i>
+                        Follow me on Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social--media-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        Connect on Linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social--media-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Like my Facebook page
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social--media-github">
+                        <i class="fab fa-github"></i>
+                        See projects on Github
                     </a>
 
-                    normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
-                    &:hover {transform: translateX(0)}
                 </li>
             </ul>
         </section>
     </body>
 </html>
+
+<section> absoluut op scherm
+    <ul>
+        mixin listreset
+        <li>
+            
+            ::before ook nog
+            normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
+            &:hover {transform: translateX(0)}
+        </li>
+    </ul>
+</section>

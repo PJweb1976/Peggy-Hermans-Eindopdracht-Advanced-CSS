@@ -182,110 +182,176 @@ body {
           transform: translateY(2px);
 }
 
-.social--media-buttons .button {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  margin-top: -2.5em;
-  margin-bottom: 1px;
-  /*::before ook nog
-            normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
-            &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.social--media-buttons .button:hover {
-  width: 200px;
+html,
+body {
+  height: 100%;
 }
 
-.social--media-buttons .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
+.icons {
+  position: fixed;
+  top: 30%;
+  right: 0%;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icons a {
+  padding: 8px;
+  font-size: 16px;
+  margin: 2px;
+  text-align: left;
+  -webkit-transform: translate(195px, 0px);
+          transform: translate(195px, 0px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.icons a:hover {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.icons a i {
+  margin-right: 25px;
+  height: 40px;
+  width: 40px;
+  color: #fff;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.social--media-buttons .button:nth-child(1):hover .icon {
+.icons a:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.blog {
   background-color: #e17b77;
   color: #fff;
 }
 
-.social--media-buttons .button:nth-child(2):hover .icon {
+.twitter {
   background-color: #00aced;
   color: #fff;
 }
 
-.social--media-buttons .button:nth-child(3):hover .icon {
+.linkedin {
   background-color: #007bb6;
   color: #fff;
 }
 
-.social--media-buttons .button:nth-child(4):hover .icon {
+.facebook {
   background-color: #3b5998;
   color: #fff;
 }
 
-.social--media-buttons .button:nth-child(5):hover .icon {
+.github {
   background-color: #333;
   color: #fff;
 }
 
+/*.social--media-buttons {
+  @include list-reset;
+}
+  html, body {
+    height:100%;
+  }
+
+.social--media-buttons .button {
+  border:2px solid black;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  width: 200px;
+  flex-direction:column;
+  overflow: hidden;
+  transform: translateX(100px);
+  /*transition: transform 400ms ease-in-out;*/
+/*transition: all 0.3s ease-out;
+  
+  margin-top: 2.5em; /*was -2.5em terugzetten na plaatsing rechts?*/
+/*margin-bottom: 1px;
+}
+/*::before ook nog
+            normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
+            &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
+/*
+.social--media-buttons .button:hover {
+  width: 250px;
+}
+.social--media-buttons .button .icon {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
 .social--media-buttons .button .icon i {
   font-size: 25px;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  line-height: 60px;
 }
-
 .social--media-buttons .button:hover .icon i {
   color: #fff;
 }
 
-.social--media-buttons .button span {
-  font-size: 20px;
-  font-weight: 50px;
-  line-height: 60px;
-  margin-left: 30px;
-  -webkit-transition: all 0.3s ease-out;
+.social--media-buttons .button:nth-child(1):hover .icon {
+  background-color: $color-pink;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(2):hover .icon {
+  background-color: $color-lightblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(3):hover .icon {
+  background-color: $color-darkblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(4):hover .icon {
+  background-color: $color-mediumblue;
+  color: $color-white;
+}
+.social--media-buttons .button:nth-child(5):hover .icon {
+  background-color: $color-black;
+  color: $color-white;
+}
+.social--media-buttons span {
+  font-size: 16px;
+  margin: 16px;
   transition: all 0.3s ease-out;
 }
 
-.social--media-buttons .button:nth-child(1):hover {
-  background-color: #e17b77;
-  color: #fff;
+.social--media-buttons .button:nth-child(1) span {
+  background-color: $color-pink;
+  color: $color-white;
 }
-
-.social--media-buttons .button:nth-child(2):hover {
-  background-color: #00aced;
-  color: #fff;
+.social--media-buttons .button:nth-child(2) span {
+  background-color: $color-lightblue;
+  color: $color-white;
 }
-
-.social--media-buttons .button:nth-child(3):hover {
-  background-color: #007bb6;
-  color: #fff;
+.social--media-buttons .button:nth-child(3) span {
+  background-color: $color-darkblue;
+  color: $color-white;
 }
-
-.social--media-buttons .button:nth-child(4):hover {
-  background-color: #3b5998;
-  color: #fff;
+.social--media-buttons .button:nth-child(4) span {
+  background-color: $color-mediumblue;
+  color: $color-white;
 }
-
-.social--media-buttons .button:nth-child(5):hover {
-  background-color: #333;
-  color: #fff;
+.social--media-buttons .button:nth-child(5) span {
+  background-color: $color-black;
+  color: $color-white;
 }
 
 /*

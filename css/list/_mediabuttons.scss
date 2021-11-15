@@ -1,33 +1,109 @@
-.social--media-buttons .button {
-  @include list-reset;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  overflow: hidden;
-  transition: all 0.3s ease-out;
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  margin-top: -2.5em;
-  margin-bottom: 1px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+.icons {
+  position: fixed;
+  top: 30%;
+  right: 0%;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.icons a {
+  padding: 8px;
+  font-size: 16px;
+  margin: 2px;
+  text-align: left;
+  
+  transform: translate(195px, 0px);
+  transition: all 0.5s;
+}
+.icons a:hover {
+  transform: translate(0px, 0px);
+}
+.icons a i {
+  margin-right: 25px;
+  height: 40px;
+  width: 40px;
+  color: $color-white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.icons a:hover i {
+  transform: rotate(360deg);
+}
 
-  /*::before ook nog
+.blog {
+  background-color: $color-pink;
+  color: $color-white;
+}
+.twitter {
+  background-color: $color-lightblue;
+  color: $color-white;
+}
+.linkedin {
+  background-color: $color-darkblue;
+  color: $color-white;
+}
+.facebook {
+  background-color: $color-mediumblue;
+  color: $color-white;
+}
+.github {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+/*.social--media-buttons {
+  @include list-reset;
+}
+  html, body {
+    height:100%;
+  }
+
+.social--media-buttons .button {
+  border:2px solid black;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  width: 200px;
+  flex-direction:column;
+  overflow: hidden;
+  transform: translateX(100px);
+  /*transition: transform 400ms ease-in-out;*/
+/*transition: all 0.3s ease-out;
+  
+  margin-top: 2.5em; /*was -2.5em terugzetten na plaatsing rechts?*/
+/*margin-bottom: 1px;
+}
+/*::before ook nog
             normaal transform: translateX(-100px); transition: transform 400ms ease-in-out
             &:hover {transform: translateX(0)} eerst blokjes, geen marge en daarna met text*/
-}
-
+/*
 .social--media-buttons .button:hover {
-  width: 200px;
+  width: 250px;
 }
 .social--media-buttons .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  text-align: center;
+  position: absolute;
+  width: 100%;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
+.social--media-buttons .button .icon i {
+  font-size: 25px;
+  transition: all 0.3s ease-out;
+}
+.social--media-buttons .button:hover .icon i {
+  color: #fff;
+}
+
 .social--media-buttons .button:nth-child(1):hover .icon {
   background-color: $color-pink;
   color: $color-white;
@@ -48,39 +124,29 @@
   background-color: $color-black;
   color: $color-white;
 }
+.social--media-buttons span {
+  font-size: 16px;
+  margin: 16px;
+  transition: all 0.3s ease-out;
+}
 
-.social--media-buttons .button .icon i {
-  font-size: 25px;
-  transition: all 0.3s ease-out;
-  line-height: 60px;
-}
-.social--media-buttons .button:hover .icon i {
-  color: #fff;
-}
-.social--media-buttons .button span {
-  font-size: 20px;
-  font-weight: 50px;
-  line-height: 60px;
-  margin-left: 30px;
-  transition: all 0.3s ease-out;
-}
-.social--media-buttons .button:nth-child(1):hover {
+.social--media-buttons .button:nth-child(1) span {
   background-color: $color-pink;
   color: $color-white;
 }
-.social--media-buttons .button:nth-child(2):hover {
+.social--media-buttons .button:nth-child(2) span {
   background-color: $color-lightblue;
   color: $color-white;
 }
-.social--media-buttons .button:nth-child(3):hover {
+.social--media-buttons .button:nth-child(3) span {
   background-color: $color-darkblue;
   color: $color-white;
 }
-.social--media-buttons .button:nth-child(4):hover {
+.social--media-buttons .button:nth-child(4) span {
   background-color: $color-mediumblue;
   color: $color-white;
 }
-.social--media-buttons .button:nth-child(5):hover {
+.social--media-buttons .button:nth-child(5) span {
   background-color: $color-black;
   color: $color-white;
 }

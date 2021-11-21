@@ -276,6 +276,7 @@ body {
       grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 1em;
   grid-row-gap: 1em;
+  /*object-fit: cover;*/
 }
 
 @media (max-width: 768px) {
@@ -292,7 +293,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   .list--photos {
     background-color: blue;
     display: -ms-grid;

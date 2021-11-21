@@ -1,0 +1,29 @@
+.list--photos {
+  @include list-reset;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+@media (max-width: 768px) {
+  .list--photos {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+}
+@media (max-width: 500px) {
+  .list--photos {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+}

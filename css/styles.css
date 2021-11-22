@@ -104,6 +104,8 @@ body {
   margin-bottom: 0;
   display: -ms-grid;
   display: grid;
+  grid-gap: 1rem;
+  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
   /*grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   grid-gap: 1em;*/
 }
@@ -281,7 +283,7 @@ body {
 
 @media (max-width: 768px) {
   .list--photos {
-    background-color: red;
+    background-color: orange;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -293,9 +295,9 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .list--photos {
-    background-color: blue;
+    background-color: greenyellow;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[1];

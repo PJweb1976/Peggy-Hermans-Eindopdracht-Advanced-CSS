@@ -1,31 +1,32 @@
 .list--photos {
   @include list-reset;
-  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  /*object-fit: cover;*/
-}
+  grid-gap: 1em;
 
-@media (max-width: 768px) {
-  .list--photos {
-    background-color: orange;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+  figure {
+    position: relative;
+    margin: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
   }
-}
-@media (max-width: 380px) {
-  .list--photos {
-    background-color: greenyellow;
-    display: grid;
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  figcaption {
+    position: absolute;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 380px) {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
   }
 }
